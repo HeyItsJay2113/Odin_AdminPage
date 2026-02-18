@@ -1,29 +1,104 @@
 body{
 
-    margin: 0
+    margin: 0;
+    background-color: rgb(202, 203, 206);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
+}
+
+@font-face {
+    font-family: "NorseBold";
+    src: url("/odin_signup/fonts/NorseBold.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
 }
 
 .pageContainer{
     display: grid;
     grid-template-columns: repeat(5, 1fr) 1rem;
-    grid-template-rows: 3fr 4fr 6fr 8fr 8fr 1fr;
+    grid-template-rows: 2fr 4fr 6fr 8fr 8fr 1fr;
     width: 100vw;
     height: 100vh;
     gap: 1rem;
 }
 
-.headerContainer{
-    grid-column: 1 / 7;
-    background-color:red ;
+.headerContainer {
+    grid-column: 1 / -1;
+    display: grid;
+    place-items: center;
+    background-color: rgba(43, 81, 99, 1);
+    box-shadow: 0 0 3px 3px gray;
 }
+
+.header {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+    height: 6rem;
+    width: 100%;
+}
+
+img.headerLogo {
+    display: block;
+    max-height: 4rem;
+    width: auto;
+
+}
+
+.headerText{
+ font-family: "NorseBold";
+ color: white;
+ font-size: 40pt;
+}
+    
+
 
 .dashboardContainer{
     grid-column: 1 / 2;
-   grid-row: 2/6;
-    background-color: aqua;
+    grid-row: 2/6;
+    background-color: rgb(22, 42, 52);
+    margin-top: -1rem;
+    margin-bottom: -1rem;
+    grid-template-rows: 1fr 1fr 3fr;
+    display: grid;
+    
   
 
 }
+
+.dashboardH{
+    grid-row: 1/2;
+    text-align: center;
+    color: white;
+    
+}
+
+li{
+    list-style: none;
+    color: white;
+
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:visited{
+    color: white;
+}
+.dashboardUpper{
+    grid-row: 2/3;
+    
+    
+    
+}
+
+.dashboardLower{
+    grid-row: 3/4;
+
+}
+
+
 
 .searchbarContainer{
     grid-column: 2/5;
