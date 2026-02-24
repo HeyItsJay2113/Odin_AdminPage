@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styels.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
@@ -12,7 +12,7 @@
         <div class="headerContainer">
             <div class="header">
                 <img class="headerLogo" src="https://raw.githubusercontent.com/TheOdinProject/curriculum/5f37d43908ef92499e95a9b90fc3cc291a95014c/html_css/project-sign-up-form/odin-lined.png" alt="Odin Logo">
-                <h1 class="headerText">Odin</h1>
+                <h1 class="headerText">Odin Board</h1>
             </div>
 
         </div>
@@ -107,7 +107,6 @@
             </nav>
 
         </div>
-
         <div class="searchbarContainer">
             <form class="searchForm">
                 <input type="text" placeholder="I want to look at..." class="searchbarInput">
@@ -121,6 +120,7 @@
             </form>
         </div>
         <div class="profileContainer">
+            <div class ="profileInner">
             <div class="profile1">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="profileIconBell">
                     <title>bell</title>
@@ -135,7 +135,9 @@
             </div>
 
         </div>
+        </div>
         <div class="actionbarContainer">
+            <div class="actionbarContentLeft">
 
             <div class="actionbarLeft">
                 <img src="https://img.freepik.com/premium-photo/cute-thor-clashing-with-thunder-cartoon-vector-icon_1234220-65824.jpg" class="actionbarImg">
@@ -144,7 +146,7 @@
                      <h2>Thor Odinson (@Mjonir)</h2>
                 </div>
             </div>
-
+        </div>
             <div class="actionbarRight">
                 <div class="new"><a href=""><button class="actionbarButton">New</button></a></div>
                 <div class="upload"><a href=""><button class="actionbarButton">Upload</button></a></div>
@@ -154,9 +156,154 @@
             </div>
 
         </div>
-        <div class="projectsContainer">
+        <div class="questsContainer">
+            <h2 class="questH">Available Quests</h2>
+            <div class="questCard"><h4>Stormcall at Gullinbursti’s Gate</h4>The golden boar of the gods stirs in the eastern meadows, vexed by the whispers of frost giants and shadowed creatures. Thor, raise Mjolnir high and shatter the icy chains that bind its path. Only by guiding the boar safely to the halls of Asgard can its fury be contained, lest the creature trample both mortal fields and sacred groves alike.
+                <div class="questButtons">
+                   <button class="questButtonButton"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="questIcons">
+                        <title>Accept</title>
+                        <path d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z" />
+                   </svg></button>
 
-            projects
+                     <button class="questButtonButton"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="questIcons">
+                        <title>Decline</title>
+                        <path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
+                    </svg></button>
+
+                     <button class="questButtonButton"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="questIcons">
+                        <title>Favourite</title>
+                        <path d="M5.8 21L7.4 14L2 9.2L9.2 8.6L12 2L14.8 8.6L22 9.2L18.8 12H18C17.3 12 16.6 12.1 15.9 12.4L18.1 10.5L13.7 10.1L12 6.1L10.3 10.1L5.9 10.5L9.2 13.4L8.2 17.7L12 15.4L12.5 15.7C12.3 16.2 12.1 16.8 12.1 17.3L5.8 21M17 14V17H14V19H17V22H19V19H22V17H19V14H17Z" />
+                    </svg></button>
+             
+                     <button class="questButtonButton"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="questIcons">
+                        <title>Invite</title>
+                        <path d="M15,14C12.33,14 7,15.33 7,18V20H23V18C23,15.33 17.67,14 15,14M6,10V7H4V10H1V12H4V15H6V12H9V10M15,12A4,4 0 0,0 19,8A4,4 0 0,0 15,4A4,4 0 0,0 11,8A4,4 0 0,0 15,12Z" />
+                    </svg></button>
+
+                </div>
+            </div>
+
+            <div class="questCard"><h4>The Raven’s Secret Flight</h4>Odin’s ravens have glimpsed a shadow creeping through the branches of Yggdrasil, a secret that might unravel the threads of fate. Seek the hidden path between the worlds, pierce the veils of mist, and uncover what the dark leaves whisper. Bring knowledge of the unseen, for the All-Father’s eyes are blind to nothing, and even a single shadow may tip the balance. 
+                <div class="questButtons">
+                     <button class="questButtonButton"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="questIcons">
+                        <title>Accept</title>
+                        <path d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z" />
+                    </svg></button>
+
+                     <button class="questButtonButton"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="questIcons">
+                        <title>Decline</title>
+                        <path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
+                    </svg></button>
+
+                     <button class="questButtonButton"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="questIcons">
+                        <title>Favourite</title>
+                        <path d="M5.8 21L7.4 14L2 9.2L9.2 8.6L12 2L14.8 8.6L22 9.2L18.8 12H18C17.3 12 16.6 12.1 15.9 12.4L18.1 10.5L13.7 10.1L12 6.1L10.3 10.1L5.9 10.5L9.2 13.4L8.2 17.7L12 15.4L12.5 15.7C12.3 16.2 12.1 16.8 12.1 17.3L5.8 21M17 14V17H14V19H17V22H19V19H22V17H19V14H17Z" />
+                    </svg></button>
+             
+                     <button class="questButtonButton"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="questIcons">
+                        <title>Invite</title>
+                        <path d="M15,14C12.33,14 7,15.33 7,18V20H23V18C23,15.33 17.67,14 15,14M6,10V7H4V10H1V12H4V15H6V12H9V10M15,12A4,4 0 0,0 19,8A4,4 0 0,0 15,4A4,4 0 0,0 11,8A4,4 0 0,0 15,12Z" />
+                    </svg></button>
+
+                </div>
+            </div>
+            <div class="questCard"><h4>The Forge of Surtur</h4>Surtur’s molten fire glimmers across the horizon, threatening the lands of Midgard with unbridled flame. Thor, venture into the burning plains of Muspelheim, wrest the molten secrets from the fire-lord’s grip, and quench the flames that seek to leap into mortal realms. Only your strength can preserve both forge and world from ruin, until the embers of chaos are once more subdued. 
+                <div class="questButtons">
+                     <button class="questButtonButton"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="questIcons">
+                        <title>Accept</title>
+                        <path d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z" />
+                    </svg></button>
+
+                     <button class="questButtonButton"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="questIcons">
+                        <title>Decline</title>
+                        <path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
+                    </svg></button>
+
+                     <button class="questButtonButton"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="questIcons">
+                        <title>Favourite</title>
+                        <path d="M5.8 21L7.4 14L2 9.2L9.2 8.6L12 2L14.8 8.6L22 9.2L18.8 12H18C17.3 12 16.6 12.1 15.9 12.4L18.1 10.5L13.7 10.1L12 6.1L10.3 10.1L5.9 10.5L9.2 13.4L8.2 17.7L12 15.4L12.5 15.7C12.3 16.2 12.1 16.8 12.1 17.3L5.8 21M17 14V17H14V19H17V22H19V19H22V17H19V14H17Z" />
+                    </svg></button>
+             
+                     <button class="questButtonButton"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="questIcons">
+                        <title>Invite</title>
+                        <path d="M15,14C12.33,14 7,15.33 7,18V20H23V18C23,15.33 17.67,14 15,14M6,10V7H4V10H1V12H4V15H6V12H9V10M15,12A4,4 0 0,0 19,8A4,4 0 0,0 15,4A4,4 0 0,0 11,8A4,4 0 0,0 15,12Z" />
+                    </svg></button>
+
+                </div>
+            </div>
+            <div class="questCard"><h4>Jormungandr’s Tide</h4>The great serpent coils beneath the rolling waves, restless and hungry, its movements sending tremors across the seas. Thor, take ship across the roaring waters, strike at its underbelly with thunder and steel, and bind its fury before the oceans rise to claim the shores. Delay not, for each passing tide strengthens the serpent and darkens the hearts of men with fear. 
+                <div class="questButtons">
+                     <button class="questButtonButton"></button><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="questIcons">
+                        <title>Accept</title>
+                        <path d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z" />
+                    </svg>
+
+                     <button class="questButtonButton"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="questIcons">
+                        <title>Decline</title>
+                        <path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
+                    </svg></button>
+
+                     <button class="questButtonButton"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="questIcons">
+                        <title>Favourite</title>
+                        <path d="M5.8 21L7.4 14L2 9.2L9.2 8.6L12 2L14.8 8.6L22 9.2L18.8 12H18C17.3 12 16.6 12.1 15.9 12.4L18.1 10.5L13.7 10.1L12 6.1L10.3 10.1L5.9 10.5L9.2 13.4L8.2 17.7L12 15.4L12.5 15.7C12.3 16.2 12.1 16.8 12.1 17.3L5.8 21M17 14V17H14V19H17V22H19V19H22V17H19V14H17Z" />
+                    </svg></button>
+             
+                     <button class="questButtonButton"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="questIcons">
+                        <title>Invite</title>
+                        <path d="M15,14C12.33,14 7,15.33 7,18V20H23V18C23,15.33 17.67,14 15,14M6,10V7H4V10H1V12H4V15H6V12H9V10M15,12A4,4 0 0,0 19,8A4,4 0 0,0 15,4A4,4 0 0,0 11,8A4,4 0 0,0 15,12Z" />
+                    </svg></button>
+
+                </div>
+            </div>
+            <div class="questCard"><h4>The Whispering Halls of Hel</h4>From the icy corridors of Helheim, voices rise in sorrow and discontent, calling for reckoning among the living. Descend into the frozen halls, pierce the veils that separate the worlds, and guide the restless spirits back to their place. Only by honoring the balance of life and death can the realms remain secure, and the whispers of the lost be silenced. 
+                <div class="questButtons">
+                     <button class="questButtonButton"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="questIcons">
+                        <title>Accept</title>
+                        <path d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z" />
+                    </svg></button>
+
+                     <button class="questButtonButton"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="questIcons">
+                        <title>Decline</title>
+                        <path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
+                    </svg></button>
+
+                     <button class="questButtonButton"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="questIcons">
+                        <title>Favourite</title>
+                        <path d="M5.8 21L7.4 14L2 9.2L9.2 8.6L12 2L14.8 8.6L22 9.2L18.8 12H18C17.3 12 16.6 12.1 15.9 12.4L18.1 10.5L13.7 10.1L12 6.1L10.3 10.1L5.9 10.5L9.2 13.4L8.2 17.7L12 15.4L12.5 15.7C12.3 16.2 12.1 16.8 12.1 17.3L5.8 21M17 14V17H14V19H17V22H19V19H22V17H19V14H17Z" />
+                    </svg></button>
+             
+                     <button class="questButtonButton"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="questIcons">
+                        <title>Invite</title>
+                        <path d="M15,14C12.33,14 7,15.33 7,18V20H23V18C23,15.33 17.67,14 15,14M6,10V7H4V10H1V12H4V15H6V12H9V10M15,12A4,4 0 0,0 19,8A4,4 0 0,0 15,4A4,4 0 0,0 11,8A4,4 0 0,0 15,12Z" />
+                    </svg></button>
+
+                </div>
+            </div>
+
+            <div class="questCard"><h4>The Frost Giant’s Gambit</h4>Under the shimmering northern lights, frost giants plot a tide of stone and frost to sweep across the mortal lands. Thor, ride the storm with hammer in hand, shatter their cunning schemes, and scatter their host across frozen peaks. Should you falter, the giants’ icy hand may grasp the kingdoms of men, leaving only frost and shadow in their wake.
+                <div class="questButtons">
+                     <button class="questButtonButton"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="questIcons">
+                        <title>Accept</title>
+                        <path d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z" />
+                    </svg></button>
+
+                     <button class="questButtonButton"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="questIcons">
+                        <title>Decline</title>
+                        <path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" />
+                    </svg></button>
+
+                     <button class="questButtonButton"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="questIcons">
+                        <title>Favourite</title>
+                        <path d="M5.8 21L7.4 14L2 9.2L9.2 8.6L12 2L14.8 8.6L22 9.2L18.8 12H18C17.3 12 16.6 12.1 15.9 12.4L18.1 10.5L13.7 10.1L12 6.1L10.3 10.1L5.9 10.5L9.2 13.4L8.2 17.7L12 15.4L12.5 15.7C12.3 16.2 12.1 16.8 12.1 17.3L5.8 21M17 14V17H14V19H17V22H19V19H22V17H19V14H17Z" />
+                    </svg></button>
+             
+                     <button class="questButtonButton"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="questIcons">
+                        <title>Invite</title>
+                        <path d="M15,14C12.33,14 7,15.33 7,18V20H23V18C23,15.33 17.67,14 15,14M6,10V7H4V10H1V12H4V15H6V12H9V10M15,12A4,4 0 0,0 19,8A4,4 0 0,0 15,4A4,4 0 0,0 11,8A4,4 0 0,0 15,12Z" />
+                    </svg></button>
+
+                </div>
+            </div>
 
         </div>
         <div class="announcementContainer">
@@ -165,17 +312,42 @@
             <div class="announceContainer">
             <div class="announce"><h4>Decree Of Odin</h4>The All-Father commands a brief rune-forging of the system. The halls may dim while wisdom is restored. Stand fast until the ravens return.</div>
             <div class="announce"><h4>Word From Thor</h4>Mjölnir strikes to crush hidden frost giants (bugs). If the realm flickers, refresh and let the thunder roll again.</div>
-            <div class="announce"><h4>Beneath Yggdrasil</h4> Norns reweave the strands of fate. Some paths may close briefly—glory returns when the branches steady.</div>
+            <div class="announce"><h4>Beneath Yggdrasil</h4> Norns reweave the strands of fate. Some paths may Decline briefly—glory returns when the branches steady.</div>
+            </div></div>
 
-        </div></div>
         <div class="trendingContainer">
 
-            trending
+            <h2 class="trendingH">Trending Heroes</h2>
+            <div class="trendingAccountsContainer">
 
+                <div class="trending1">
+                    <img src="https://i.pinimg.com/736x/d3/7d/04/d37d0430900def420868f891079372c1.jpg" class="trendingImg">
+                    <h5 class="trendingName">@loki</h5>
+                    <div class="trendingDesc">Your favourite trickster</div>
+                </div>
+                   <div class="trending2">
+                    <img src="https://cdn.dribbble.com/userupload/22354985/file/original-1286c00a472b0b7861003783e5ee006c.png" class="trendingImg">
+                    <h5 class="trendingName">@hela</h5>
+                    <div class="trendingDesc">Goddess of death</div>
+                </div>
+                   <div class="trending3">
+                    <img src="https://static.marvelsnap.pro/art/Heimdall_02.webp" class="trendingImg">
+                    <h5 class="trendingName">@bifrost</h5>
+                    <div class="trendingDesc">Hey, Its Hiemdall!</div>
+                </div>
+                   <div class="trending4">
+                    <img src="https://i.pinimg.com/736x/74/27/ae/7427aebc5a4672dbbefcbe353cb11557.jpg" class="trendingImg">
+                    <h5 class="trendingName">@freyja</h5>
+                    <div class="trendingDesc">Hey, ready for an adventure?</div>
+                </div>
+            </div>
         </div>
+
+
+        
         <div class="footerContainer">
 
-            footer
+            Created By: HeyItsJay for The Odin Project 
 
         </div>
     </div>

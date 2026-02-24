@@ -1,0 +1,436 @@
+/* ------------------- Global Styles ------------------- */
+body {
+    margin: 0;
+    background-color: rgb(217, 217, 217);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@font-face {
+    font-family: "NorseBold";
+    src: url("fonts/NorseBold.otf") format("opentype");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* ------------------- Page Layout ------------------- */
+.pageContainer {
+    display: grid;
+    grid-template-columns: 240px repeat(4, 1fr) 1.5fr;
+    grid-template-rows: auto 5rem 10rem auto auto auto;
+    min-height: 100vh;
+}
+
+/* ------------------- Header ------------------- */
+.headerContainer {
+    grid-column: 1 / -1;
+    display: grid;
+    place-items: center;
+    background-color: rgba(43, 81, 99, 1);
+    box-shadow: 0 0 3px 3px gray;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6rem;
+    width: 100%;
+}
+
+img.headerLogo {
+    display: block;
+    max-height: 4rem;
+    width: auto;
+}
+
+.headerText {
+    font-family: "NorseBold";
+    color: white;
+    font-size: 40pt;
+}
+
+/* ------------------- Dashboard ------------------- */
+.dashboardContainer {
+    grid-column: 1 / 2;
+    grid-row: 2 / 6;
+    background-color: rgb(22, 42, 52);
+    display: grid;
+    grid-template-rows: 1fr 1fr 3fr;
+}
+
+.dashboardH {
+    grid-row: 1 / 2;
+    text-align: center;
+    color: white;
+}
+
+li {
+    list-style: none;
+    color: white;
+    margin: 2rem 2rem 2rem 1rem;
+    transition: all 0.3s ease;
+}
+
+li:hover {
+    transform: scale(1.05) translateY(-3px);
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
+.dashboardUpper {
+    grid-row: 2 / 3;
+    margin-top: 1rem;
+}
+
+.dashboardLower {
+    grid-row: 3 / 4;
+    margin-top: 15rem;
+}
+
+.dashboardIconH {
+    height: 4rem;
+    width: 4rem;
+    margin-top: 2rem;
+    display: inline;
+}
+
+.dashboardIconH path,
+.dashboardIcon path {
+    fill: white;
+}
+
+.dashboardIcon {
+    margin-right: 1rem;
+    height: 1rem;
+    width: 1rem;
+}
+
+/* ------------------- Searchbar ------------------- */
+.searchbarContainer {
+    grid-column: 2 / 5;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: whitesmoke;
+    min-width: 600px;
+    padding: 1rem;
+}
+
+.searchForm {
+    display: flex;
+    width: auto;
+    
+}
+
+.searchbarInput {
+    padding: 0.5rem 1rem;
+    width: 500px;
+    border-radius: 25px;
+    border: none;
+    background-color: lightgray;
+}
+
+.searchbarButton {
+    flex: 1;
+    background: none;
+    border: none;
+    height: 3rem;
+    width: 3rem;
+    transition: 0.3s ease;
+}
+
+.searchbarButton:hover {
+    transform: scale(1.15);
+    cursor: pointer;
+}
+
+.searchbarIcon {
+    width: 2rem;
+    height: 2rem;
+}
+
+/* ------------------- Profile ------------------- */
+.profileContainer {
+    grid-column: 5 / 7;
+    background-color: whitesmoke;
+    display: grid;
+    align-items: center;
+    justify-items: end;
+}
+
+.profileInner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 500px;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.profile1 { grid-column: 1 / 2; }
+.profile2 { grid-column: 2 / 3; }
+.profile3 { grid-column: 3 / 4; }
+
+.profileIconBell { height: 2rem; }
+.profileIconImg { height: 3rem; border-radius: 100px; }
+
+.profileIconBell:hover,
+.profileIconImg:hover,
+.profile3:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+
+}
+
+/* ------------------- Actionbar ------------------- */
+.actionbarContainer {
+    grid-column: 2 / 7;
+    background-color: whitesmoke;
+    display: grid;
+    padding: 1rem;
+}
+
+.actionbarContentLeft {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    padding: 1rem;
+    width: 100%;
+    max-width: 800px;
+    place-self: center;
+}
+
+.actionbarLeft {
+    grid-column: 1 / 2;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    place-self: center;
+}
+
+.actionbarImg {
+    width: 6rem;
+    border-radius: 100px;
+    place-self: center;
+}
+
+.actionbarProfileRight {
+    place-items: start;
+    text-align: center;
+}
+
+.actionbarRight {
+    grid-column: 2 / 3;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(6rem, 1fr));
+    place-items: center;
+    gap: 2rem;
+    padding: 1rem 2rem;
+    max-width: 600px;
+    justify-self: end;
+}
+
+.actionbarButton {
+    border: none;
+    background: rgba(43, 81, 99, 1);
+    color: white;
+    border-radius: 25px;
+
+   
+    width: 100%;          
+    min-width: 6rem;      
+    max-width: 10rem;     
+
+    height: 2rem;
+    font-size: large;
+}
+
+.new { grid-column: 1 / 2; }
+.upload { grid-column: 2 / 3; }
+.share { grid-column: 3 / 4; }
+
+.new,
+.upload,
+.share{
+    transition: 0.3s ease;
+}
+
+.new:hover,
+.upload:hover,
+.share:hover{
+    
+    transform: scale(1.05);
+}
+
+/* ------------------- Quests ------------------- */
+.questsContainer {
+    grid-column: 2 / 6;
+    grid-row: 4 / 6;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 100px auto;
+    grid-auto-rows: auto;
+    gap: 0.5rem;
+    padding: 1rem;
+}
+
+.questH {
+    grid-column: 1 / -1;
+    grid-row: 1 / 2;
+    font-weight: 500;
+    font-size: larger;
+    text-align: center;
+}
+
+.questCard{
+    background-color: whitesmoke;
+    padding: 2rem 1rem;
+    border-radius: 10px;
+    border-left: solid 5px rgba(43, 81, 99, 1);
+    max-height: fit-content;
+    transition: all 0.3s ease;
+    box-shadow: 5px 5px 10px rgb(205, 203, 203);
+}
+.questCard:hover{
+    transform: scale(1.02);
+
+}
+
+.questButtonButton{
+    outline: none;
+    background: none;
+    border: none;
+}
+.questButtons {
+    margin-top: 2rem;}
+    
+.questIcons:hover{
+    transform: scale(1.1);
+}
+
+
+.questIcons {
+    height: 2rem;
+    width: 2rem;
+    transition: 0.3s ease;
+}
+
+
+/* ------------------- Announcements ------------------- */
+.announcementContainer {
+    grid-column: 6 / 7;
+    grid-row: 4 / 5;
+    padding: 1rem 1rem 1rem 1rem;
+    border-radius: 10px;
+    
+}
+
+.announcementH {
+    font-weight: 500;
+    font-size: larger;
+    text-align: center;
+}
+
+.announceContainer {
+    border-radius: 10px;
+    background-color: whitesmoke;
+    padding: 0 1rem 1rem 1rem;
+    box-shadow: 5px 5px 10px rgb(205, 203, 203);
+}
+
+.announce {
+    place-self: center;
+    padding: 1rem;
+    background-color: whitesmoke;
+    width: 80%;
+    border-bottom: 2px solid lightgray;
+    font-size: 12pt;
+}
+
+
+/* ------------------- Trending ------------------- */
+.trendingContainer {
+    grid-column: 6 / 7;
+    grid-row: 5 / 6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem 2rem;
+}
+
+.trendingH {
+    font-weight: 500;
+    font-size: larger;
+}
+
+
+.trendingAccountsContainer {
+    background-color: whitesmoke;
+    border-radius: 10px;
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    box-shadow: 5px 5px 10px rgb(205, 203, 203);
+}
+
+
+.trending1, .trending2, .trending3, .trending4 {
+    display: grid;
+    grid-template-columns: 5rem 1fr; 
+    grid-template-rows: 1rem 2rem;   
+    align-items: center;
+    gap: 0.25rem 0.75rem;          
+    padding: 0.5rem;
+    border-radius: 10px;
+    transition: background-color 0.2s ease;
+    cursor: pointer;
+}
+
+.trending1:hover, .trending2:hover, .trending3:hover, .trending4:hover {
+    background-color:rgba(22, 42, 52, 0.093); 
+}
+
+
+.trendingImg {
+    grid-row: 1 / span 2;   
+    grid-column: 1 / 2;
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    border: solid rgba(43, 81, 99, 1) 3px;
+    object-fit: cover;      
+}
+
+/* Name */
+.trendingName {
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: #000;
+}
+
+/* Description / handle */
+.trendingDesc {
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    font-size: 0.8rem;
+    color: gray;            
+}
+
+/* ------------------- Footer ------------------- */
+.footerContainer {
+    grid-column: 1 / -1;
+    background-color: #1f1f1f;
+    color: rgba(255, 255, 255, 0.75);
+    text-align: center;
+    padding: 0.5rem;
+}
